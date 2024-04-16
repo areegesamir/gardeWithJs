@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items at the start of the cross axis */
+    background-image: url('pattern.png'); /* Specify the path to your background image */
+    background-color: #f8f9fa; /* Optional background color */
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    align-items: center; /* Center items vertically within the container */
+    max-width: 1200px; /* Set max-width for the container */
+    width: 80%; /* Use a percentage for width to make it responsive */
+    margin-top: 200px; /* Adjust top margin as needed */
+}
+
+.image-container {
+    flex: 1; /* Take up remaining space */
+    padding: 10px; /* Add padding for spacing */
+}
+
+.image-container img {
+    max-width: 100%; /* Ensure image does not exceed container width */
+    height: auto; /* Maintain aspect ratio */
+}
+.image-container h1{
+    text-align: center;
+    margin-right: 350px;
+    
+    color: #333;
+}
+
+.form-container {
+    width: 300px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.remember-me input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.forgot-password {
+    float: right;
+    font-size: 14px;
+    text-decoration: none;
+    margin-bottom: 30px;
+    color: #007bff;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .image-container, .form-container {
+        width: 90%; /* Adjust width for smaller screens */
+        margin-bottom: 20px; /* Add bottom margin between the containers */
+    }
+}
