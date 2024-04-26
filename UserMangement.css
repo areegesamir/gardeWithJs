@@ -1,0 +1,55 @@
+
+.main-content {
+    margin-left: 49px; /* Adjust this based on sidebar width */
+    padding: 20px;
+}
+
+.profile {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-info .profilePicture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile-details {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    display: inline;
+    font-size: 24px;
+    color: #443442; /* Customize color */
+}
+.icon p a{
+    display: inline;
+    text-decoration: none;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align to the right */
+    margin-left: 650px;
+    /* margin-top: 20px; Adjust as needed */
+}
+
+.delet .edit{
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #443442;
+}
